@@ -1,0 +1,5 @@
+<launch>
+    <node pkg="tf_ros_cookbook" type="tf2_cookbook" name="tf2_cookbook" output="screen"/>
+
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find tf_ros_cookbook)/config/rviz.rviz"/>
+</launch>
